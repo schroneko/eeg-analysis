@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        脳波解析ソフトウェア
+    </title>
+    <style>
+        label>input {
+            display: none;
+        }
+
+        label {
+            color: #AAAAAA;
+            color: lightgray;
+            background-color: #006DD9;
+            padding: 10px;
+            border: double 4px #AAAAAA;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        脳波解析ソフトウェア
+    </h1>
+    <h2>
+        脳波データ（拡張子.m00）を解析し、Zスコアを算出します。
+    </h2>
+    <h3>
+        解析終了後にWordファイルをダウンロードします。
+    </h3>
+    <form method="post" enctype="multipart/form-data">
+        <label for="upload">
+            ファイルを選択してください
+            <input type="file" name=file id="upload" required>
+        </label>
+        <p><input type="text" name="text" required placeholder="Input Name"></p>
+        <input type=submit value="解析">
+    </form>
+
+</body>
+
+</html>
